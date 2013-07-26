@@ -1,4 +1,4 @@
-# bash progress bar code from http://moblog.bradleyit.com/2010_02_01_archive.html
+# bash progress bar code from http://moblog.bradleyit.com/2010/02/simple-bash-progress-bar-function.html
 show_bar () {
   percDone=$(echo 'scale=2;'$1/$2*100 | bc)
   barLen=$(echo ${percDone%'.00'})
